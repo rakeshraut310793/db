@@ -1,32 +1,71 @@
-Create table employees 
+CREATE TABLE employees 
 (
-Emp_id int identity (1,1) primary key,
-Emp_firstname varchar(50),
-Emp_lastname varchar(50),
-Emp_gender varchar(10),
-Emp_bloodgroup varchar(10),
-Emp_ martialstatus varchar(10),
-Emp_department varchar(50),
-Emp_phonenumber varchar(10),
-Emp_city varchar(50),
-Emp_state varchar(50),
-Emp_country varchar(50),
-Emp_countrycode varchar(10),
-Emp_state varchar(50),
-Emp_city varchar(50),
-Emp_pincode varchar(50),
-Emp_salary decimal (10,2)
+    Emp_id INT IDENTITY (1,1) PRIMARY KEY,
+    Emp_firstname VARCHAR(50),
+    Emp_lastname VARCHAR(50),
+    Emp_gender VARCHAR(10),
+    Emp_bloodgroup VARCHAR(10),
+    Emp_martialstatus VARCHAR(10),
+    Emp_department VARCHAR(50),
+    Emp_phonenumber VARCHAR(10),
+    Emp_city VARCHAR(50),
+    Emp_state VARCHAR(50),
+    Emp_country VARCHAR(50),
+    Emp_countrycode VARCHAR(10),
+    Emp_pincode VARCHAR(50),
+    Emp_salary DECIMAL (10,2)
 );
 
+--INSERT RECORDS
 
-
-
-
-
-
-
-
-
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('John', 'Doe', 'Male', 'O+', 'Single', 'IT', '1234567890', 'New York', 'NY', 'USA', 'US', '10001', 70000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Jane', 'Smith', 'Female', 'A+', 'Married', 'HR', '0987654321', 'Los Angeles', 'CA', 'USA', 'US', '90001', 75000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Michael', 'Johnson', 'Male', 'B+', 'Single', 'Finance', '1122334455', 'Chicago', 'IL', 'USA', 'US', '60601', 80000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Emily', 'Davis', 'Female', 'AB+', 'Single', 'Marketing', '2233445566', 'Houston', 'TX', 'USA', 'US', '77001', 72000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Christopher', 'Miller', 'Male', 'O-', 'Married', 'Sales', '3344556677', 'Phoenix', 'AZ', 'USA', 'US', '85001', 68000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Jessica', 'Wilson', 'Female', 'A-', 'Single', 'IT', '4455667788', 'San Diego', 'CA', 'USA', 'US', '92101', 73000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('David', 'Brown', 'Male', 'B-', 'Married', 'Finance', '5566778899', 'San Francisco', 'CA', 'USA', 'US', '94101', 82000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Sarah', 'Moore', 'Female', 'O+', 'Single', 'HR', '6677889900', 'Seattle', 'WA', 'USA', 'US', '98101', 71000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('James', 'Taylor', 'Male', 'A+', 'Single', 'Marketing', '7788990011', 'Denver', 'CO', 'USA', 'US', '80201', 76000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Patricia', 'Anderson', 'Female', 'AB-', 'Married', 'Sales', '8899001122', 'Boston', 'MA', 'USA', 'US', '02101', 69000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Robert', 'Thomas', 'Male', 'O+', 'Single', 'IT', '9900112233', 'Miami', 'FL', 'USA', 'US', '33101', 75000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Linda', 'Jackson', 'Female', 'A+', 'Married', 'Finance', '1010101010', 'Toronto', 'ON', 'Canada', 'CA', 'M5H 2N2', 80000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('William', 'White', 'Male', 'B+', 'Single', 'HR', '2020202020', 'Vancouver', 'BC', 'Canada', 'CA', 'V5K 0A1', 72000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Elizabeth', 'Harris', 'Female', 'AB+', 'Single', 'Marketing', '3030303030', 'Montreal', 'QC', 'Canada', 'CA', 'H3A 1B2', 77000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Joseph', 'Martin', 'Male', 'O-', 'Married', 'Sales', '4040404040', 'Calgary', 'AB', 'Canada', 'CA', 'T2P 1J9', 68000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Barbara', 'Thompson', 'Female', 'A-', 'Single', 'IT', '5050505050', 'Ottawa', 'ON', 'Canada', 'CA', 'K1P 1A5', 73000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Thomas', 'Garcia', 'Male', 'B-', 'Married', 'Finance', '6060606060', 'Edmonton', 'AB', 'Canada', 'CA', 'T5J 0N3', 81000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Susan', 'Martinez', 'Female', 'O+', 'Single', 'HR', '7070707070', 'Winnipeg', 'MB', 'Canada', 'CA', 'R3B 0V6', 70000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Charles', 'Robinson', 'Male', 'A+', 'Single', 'Marketing', '8080808080', 'Quebec City', 'QC', 'Canada', 'CA', 'G1A 1A1', 76000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Karen', 'Clark', 'Female', 'AB-', 'Married', 'Sales', '9090909090', 'Hamilton', 'ON', 'Canada', 'CA', 'L8P 4V8', 69000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Matthew', 'Rodriguez', 'Male', 'O+', 'Single', 'IT', '1111111111', 'London', 'England', 'UK', 'GB', 'EC1A 1BB', 75000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Nancy', 'Lewis', 'Female', 'A+', 'Married', 'Finance', '2222222222', 'Birmingham', 'England', 'UK', 'GB', 'B1 1AA', 80000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Mark', 'Lee', 'Male', 'B+', 'Single', 'HR', '3333333333', 'Manchester', 'England', 'UK', 'GB', 'M1 1AE', 72000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Sandra', 'Walker', 'Female', 'AB+', 'Single', 'Marketing', '4444444444', 'Leeds', 'England', 'UK', 'GB', 'LS1 1UR', 77000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Donald', 'Hall', 'Male', 'O-', 'Married', 'Sales', '5555555555', 'Glasgow', 'Scotland', 'UK', 'GB', 'G1 1AA', 68000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Ashley', 'Allen', 'Female', 'A-', 'Single', 'IT', '6666666666', 'Edinburgh', 'Scotland', 'UK', 'GB', 'EH1 1AA', 73000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Steven', 'Young', 'Male', 'B-', 'Married', 'Finance', '7777777777', 'Liverpool', 'England', 'UK', 'GB', 'L1 1AA', 82000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Kimberly', 'Hernandez', 'Female', 'O+', 'Single', 'HR', '8888888888', 'Bristol', 'England', 'UK', 'GB', 'BS1 5TR', 71000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Paul', 'King', 'Male', 'A+', 'Single', 'Marketing', '9999999999', 'Sheffield', 'England', 'UK', 'GB', 'S1 2GU', 76000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Betty', 'Wright', 'Female', 'AB-', 'Married', 'Sales', '0000000000', 'Paris', 'Ile-de-France', 'France', 'FR', '75001', 69000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Edward', 'Lopez', 'Male', 'O+', 'Single', 'IT', '1212121212', 'Marseille', 'Provence-Alpes-Côte', 'France', 'FR', '13001', 75000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Dorothy', 'Hill', 'Female', 'A+', 'Married', 'Finance', '3434343434', 'Lyon', 'Auvergne-Rhône-Alpes', 'France', 'FR', '69001', 80000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Brian', 'Scott', 'Male', 'B+', 'Single', 'HR', '5656565656', 'Toulouse', 'Occitanie', 'France', 'FR', '31000', 72000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Lisa', 'Green', 'Female', 'AB+', 'Single', 'Marketing', '7878787878', 'Nice', 'Provence-Alpes-Côtea', 'France', 'FR', '06000', 77000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('George', 'Adams', 'Male', 'O-', 'Married', 'Sales', '9090909091', 'Nantes', 'Pays de la Loire', 'France', 'FR', '44000', 68000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Amy', 'Baker', 'Female', 'A-', 'Single', 'IT', '1010101011', 'Strasbourg', 'Grand Est', 'France', 'FR', '67000', 73000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Ronald', 'Gonzalez', 'Male', 'B-', 'Married', 'Finance', '2121212121', 'Montpellier', 'Occitanie', 'France', 'FR', '34000', 82000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Kathleen', 'Nelson', 'Female', 'O+', 'Single', 'HR', '3232323232', 'Bordeaux', 'Nouvelle-Aquitaine', 'France', 'FR', '33000', 71000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Kevin', 'Carter', 'Male', 'A+', 'Single', 'Marketing', '4343434343', 'Lille', 'Hauts-de-France', 'France', 'FR', '59000', 76000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Sharon', 'Mitchell', 'Female', 'AB-', 'Married', 'Sales', '5454545454', 'Rennes', 'Brittany', 'France', 'FR', '35000', 69000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Jason', 'Perez', 'Male', 'O+', 'Single', 'IT', '6565656565', 'Reims', 'Grand Est', 'France', 'FR', '51100', 75000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Helen', 'Roberts', 'Female', 'A+', 'Married', 'Finance', '7676767676', 'Le Havre', 'Normandy', 'France', 'FR', '76600', 80000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Jeffrey', 'Turner', 'Male', 'B+', 'Single', 'HR', '8787878787', 'Saint-Étienne', 'Auvergne-Rhône-Alpes', 'France', 'FR', '42000', 72000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Deborah', 'Phillips', 'Female', 'AB+', 'Single', 'Marketing', '9898989898', 'Toulon', 'Provence-Alpes-Côteb', 'France', 'FR', '83000', 77000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Gary', 'Campbell', 'Male', 'O-', 'Married', 'Sales', '1212121213', 'Grenoble', 'Auvergne-Rhône-Alpes', 'France', 'FR', '38000', 68000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Carol', 'Parker', 'Female', 'A-', 'Single', 'IT', '2323232323', 'Dijon', 'Burgundy', 'France', 'FR', '21000', 73000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Ryan', 'Evans', 'Male', 'B-', 'Married', 'Finance', '3434343435', 'Angers', 'Pays de la Loire', 'France', 'FR', '49000', 82000.00);
+INSERT INTO employees (Emp_firstname, Emp_lastname, Emp_gender, Emp_bloodgroup, Emp_martialstatus, Emp_department, Emp_phonenumber, Emp_city, Emp_state, Emp_country, Emp_countrycode, Emp_pincode, Emp_salary) VALUES ('Laura', 'Edwards', 'Female', 'O+', 'Single', 'HR', '4545454545', 'Nîmes', 'Occitanie', 'France', 'FR', '30000', 71000.00);
 
 
 
